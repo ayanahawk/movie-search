@@ -11,19 +11,21 @@ function App() {
     });
 
     const apiurl = 'http://www.omdbapi.com/?apikey=f2b239c7';
+   
     const search = (e) => {
-
         if (e.key === "Enter") {
-
             axios(apiurl + "&s=" + state.s).then(({ data }) => {
-                console.log(data)
+                let results=data.Search;
+
+               setState(prevState=>{
+                   return{...prevState, results:results }
+               })
             }).catch((err) => {
                 console.log(err)
             })
 
         }
     }
-
 
     const handleInput = (e) => {
         let s = e.target.value;
