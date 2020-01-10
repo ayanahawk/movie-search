@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Search from "./Search.js"
+import Results from "./Results"
 import axios from 'axios'
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
                 <h1>Movie Database</h1>
                 <main>
                     <Search handleInput={handleInput} search={search} />
+                    <Results results={state.results}/>
                 </main>
             </header>
         </div>
