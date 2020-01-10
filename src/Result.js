@@ -1,9 +1,8 @@
 import React from 'react'
-import result from './Result'
 
-function Results({result}) {
+function Result({result}) {
     return (
-      <div className="result">
+      <div className="results">
           <img src={result.Poster}/>
           
           <h3>{result.Title}</h3>
@@ -12,4 +11,4 @@ function Results({result}) {
     )
 }
 
-export default Results
+export default Result

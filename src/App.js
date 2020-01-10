@@ -41,7 +41,7 @@ function App() {
 
 
     return (
-        <div className="App">
+      
             <header>
                 <h1>Movie Database</h1>
                 <main>
@@ -49,7 +49,6 @@ function App() {
                     <Results results={state.results}/>
                 </main>
             </header>
-        </div>
     )
 }
 
