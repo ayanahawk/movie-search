@@ -21,11 +21,12 @@ header h1{
     font-weight: 400;
 }
 
+/*make sure I set my main to size */
+
 main{
     width: 100%; 
-    max-width:60px; 
+    max-width:960px; 
     margin: 0 auto; 
-
 }
 
 section{
@@ -34,7 +35,7 @@ section{
 
 .searchbox{
     display: block; 
-    width: 1000%; 
+    width: 100%; 
     padding:15px; 
 
     border:none; 
